@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <style>
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        body{
+            background-color: rgb(134, 79, 79);
+            color: white;
+            
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seu salário é alto?</h1>
+    <p>Pesquisa feita por Wilson Junior Paes</p>
+ 
+ 
+    Qual é o valor do seu salário?  <input type="number" name="sal" id="sal">
+  <input type="button" value="Verificar" onclick="analisar()">
+
+  <div id="res">
+
+  </div>
+
+  <script>
+    function analisar() {
+        var d = document.getElementById('sal')
+        var res = document.getElementById('res')
+        var sald = Number(d.value)
+
+        res.innerHTML = `O seu salário é de R$ ${sald} <br> `
+
+        if (sald < 4000) {
+            res.innerHTML += 'Você ganha menos que um programador pleno HAHAHAHAHAHA'
+        } else {
+            res.innerHTML += 'Parabéns, você ganha bem pra <strong>CARALHO</strong>'
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+  </script>
+
+</body>
+</html>

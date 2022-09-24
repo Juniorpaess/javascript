@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual país é o seu?</h1>
+    Escreva o nome do seu país<input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="analisar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function analisar() {
+            var p = document.getElementById('pais')
+            var res = document.getElementById('res')
+            var txtp = String(p.value)
+            if (txtp == 'Brasil') {
+                res.innerHTML = 'Você é brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+
+          
+
+
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

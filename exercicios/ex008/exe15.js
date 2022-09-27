@@ -29,3 +29,7 @@ switch(diaSem){
     break
 
 }
+
+o valor é maior que 50
+DocumentTimeline.wide.date (valor mais ou igual a
+    idade calculada é igual e date mais option e server)

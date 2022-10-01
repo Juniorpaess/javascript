@@ -1,4 +1,4 @@
-function verificar() {
+/* function verificar() {
     let num = document.getElementById('txtn')
     let fim = document.getElementById('txtf')
     let passo = document.getElementById('txtp')
@@ -15,4 +15,8 @@ function verificar() {
         for(let c = n; c <= f; c += p)
         res.innerHTML +=   ` ${c}`
     }
+} */
+
+for (n = 1; n <= 10; n = n + 2){
+    console.log(n)
 }

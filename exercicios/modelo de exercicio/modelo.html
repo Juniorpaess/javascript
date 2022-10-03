@@ -9,30 +9,26 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Análise de Numeros</h1>
     </header>
     
     <section>
         <div>
-            <p>Ano de nascimento: <input type="number" name="txtano" id="txtano"></p>
+     Escolha Numeros de 1 a 100
+     <input type="number" name="fnum" id="fnum">
+     <input type="button" value="adicionar" onclick="adicionar()">
+    <br><br><select name="flista" id="flista" size="6"></select>
+    <br> <input type="button" value="finalizar" onclick="finalizar()">
 
-            <p>Sexo: 
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
+          
 
-            <p>
-               <input type="button" value="Verificar" onclick="verificar()">
-            </p>
+            
 
 
             
         </div>
         <div id="res">
-            <p>Preencha os dados acima para veriricar o resultado</p>
-        
+            
 
         </div>
     </section>

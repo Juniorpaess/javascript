@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo da idade</title>
+</head>
+<body>
+    <h1>Calculo de idade</h1>
+
+    <script>
+        var anoNascimento = prompt("Informe o ano do seu nascimento")
+
+        while(anoNascimento >= 2020) {
+            alert("Dados incorretos, digite os dados certos")
+            anoNascimento = prompt("Por favor qual é o ano do seu nascimento?")
+        }
+
+        var anoAtual = prompt("Informe seu ano atual")
+        var idadeFinal = anoAtual - anoNascimento
+        alert("Sua idade é: "+idadeFinal)
+        
+    </script>
+    
+</body>
+</html>

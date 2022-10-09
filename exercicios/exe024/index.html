@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções orientadas a objeto</title>
+</head>
+<body>
+    <h1>Exercicio de funções orientadas a objetos</h1>
+    
+    <script>
+        function Pessoa(){
+            this.nome = "Wilson"
+            this.idade = 25
+            this.printNome = function(){
+                alert(this.idade)
+            }
+        }
+
+        var pessoa = new Pessoa()
+        pessoa.printNome()
+
+
+        function Animal(nome, peso){
+            this.nome = nome
+            this.peso= peso 
+        }
+
+        animal = new Animal("cachorro, 12kg")
+        alert(animal.nome)
+
+
+
+    </script>
+</body>
+</html>

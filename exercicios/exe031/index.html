@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando com o uso de Query Selector</title>
+</head>
+<body>
+    <div class="testes">
+        <div class="inside-testes">Olá mundo</div>
+    </div>
+    <div class="testes">
+        <div class="inside-testes">Junior Paes</div>
+    </div>
+
+    <script>
+        var els = document.querySelectorAll('.testes, .inside-testes')
+
+        els[0].innerHTML = 'Wilson'
+        els[0].style.color = 'red'
+
+        els[3].innerHTML = 'Olá'
+    </script>
+</body>
+</html>

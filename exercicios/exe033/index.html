@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais animaçoes</title>
+    <style>
+        .conteudo h2 span{
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+        .mostrar{
+            height: 200px !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+    <h2>Titulo do conteudo <span>Ver mais</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum facilis delectus itaque accusamus, unde velit error enim corporis beatae laboriosam ea ratione doloremque! Voluptas delectus cupiditate enim provident. Natus, accusantium.</p>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.conteudo span').addEventListener('click', function(){
+        var conteudo = document.querySelector('.conteudo p')
+        
+        
+        if(conteudo.classList.contains('mostrar')){
+            alert('Esconda o conteudo')
+            conteudo.classList.remove('mostrar')
+        }else{
+            conteudo.classList.add('mostrar');{
+                alert('mostre o conteudo')
+            }
+        }
+    })
+</script>
+</html>

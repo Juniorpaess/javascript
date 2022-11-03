@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  let contas = {
+    receitas: [1500, 300, 500],
+    despesas: [500,400]
+  }
+
+  function soma(array){
+    total = 0
+
+    for(let value of array){
+        total += value
+    }
+    return total
+}
+
+function calculatecontas(){
+    const xreceitas = soma(contas.receitas)
+    const xdespesas = soma(contas.despesas)
+
+    const final = xreceitas - xdespesas
+    console.log(final)
+}
+
+calculatecontas()
+
+</script>
+</html>
